@@ -6,7 +6,6 @@ function main(){
 
     function handleSubmit(evt){
         var val = input.value;
-        console.log(val);
         if(val != ""){
             socket.emit("send message", val);
         }
